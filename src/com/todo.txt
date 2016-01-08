@@ -1,0 +1,126 @@
+TODO THINGS
+#!# in source code
+
+upgrading system
+
+for building FARM when build or upgrade find nearest plain cell and build field -- COMPLETED not verified
+
+set rendering to max 40 FPS/ is not needet to have more FPS than 2 * GUPS what is actually cca 17
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+
+CellConstants   --- completed for lvl_1 
+Price,   --- ok lvl_1
+unkeep, --- ok lvl_1
+input --- ok lvl_1
+and producing --- ok lvl_1
+
+
+TownieSystem
+gathering resources --- OK
+finding resources --- OK
+
+CellSystem --- ok 
+building_lot --- completed but not verified for upgrading
+gathering -- OK
+public_building --- (castle and market) not have states only provides supply and shopping
+
+/////////////////////////////////////////////////////////////////
+CORETOWNS
+
+CELL INFO PANEL on click/touch     center map on tile and show cell info panel
+   if not castle or market
+   
+cell info fulscreen
+   cell name
+   3 stars   yellow, gray    eg.  1 yellow and 2 gray for level 1 
+
+   table with comments of input, unkeep and output stock  
+
+
+
+   stop/continue production  (commit popup)
+   info button
+   upgrade button (commit popup)
+   destroy button (commit popup)
+   CLOSE BUTTON
+
+castle info fullscreen
+   cell name 
+   3 stars   yellow, gray    eg.  1 yellow and 2 gray for level 1 
+
+   table with coments of player stock
+
+   3 columns  4 rows
+ 
+   [icon logs]   20   [icon planks] 20  [icon fish] 20
+   [icon stones] 20   [icon wheat]  20  [icon ore]  20
+   etc. for other resources
+
+   info button
+   upgrade button (commit popup)
+   CLOSE BUTTON   (commit popup)
+
+market info fullscreen
+   cell name 
+   3 stars   yellow, gray    eg.  1 yellow and 2 gray for level 1 
+
+   table with coments of market and player stock  buy sell button   trigger on/of (green/red)    button go to page with sell buy button
+   
+   eg.
+     (label)       (icons and numbers)       (buttons with icons)
+     RESOURCE       [icon M] | [icon Stock]                      
+     [icon logs]      45     |   50          sell   |   buy     |  goto_settings_trigger_page_button | trigger_button_ON/OFF(green/red) 
+     [icon planks]    20     |    2          sell   |   buy     |  goto_settings_trigger_page_button | trigger_button_ON/OFF(green/red)
+     [icon fish]      14     |   20          sell   |   buy     |  goto_settings_trigger_page_button | trigger_button_ON/OFF(green/red)
+
+     etc. for other resources
+
+   info button
+   upgrade button  (commit popup)
+   destroy button  (commit popup)
+   CLOSE BUTTON
+
+settings_trigger_page
+    cell name 
+    3 stars   yellow, gray    eg.  1 yellow and 2 gray for level 1 
+
+    [icon of resource]
+
+    if less then buy slider  (color orange)
+        <20
+    -----||---------------------     (corection buttons)  (+) (-)
+
+    if more then buy slider  (color green)
+                     >60
+    -----------------||---------     (corection buttons)  (+) (-)
+
+    info button
+
+    commin_button  (commit popup)
+
+    go back button
+
+
+info_page fulscreen
+
+    description with images of functionality of various components on page where info_button was
+
+back button
+
+/////////////////////////////////////////////////////////////////
+GRAPHICS
+
+Townie Animations
+
+    moving    if townie move from tile to another   ok
+    cutting   on forests                            ok
+    mining    quarries and ore_mountains            ok
+    fishing   on ponds                              ok
+    farming   on fields                             
+
+
+Building lots dust
+
